@@ -29,7 +29,7 @@ export class TypeNounPage {
 
   items = [
     'Proper Noun',
-    'Improper Noun',
+    'Material Noun',
     'Common Noun',
     'Countable Noun',
     'Uncountable Noun',
