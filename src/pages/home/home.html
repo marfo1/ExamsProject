@@ -1,14 +1,48 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+
+
+        <ion-title start>
+
+        </ion-title>
+    </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+    <ion-slides pager>
+
+        <ion-slide style="background-color: rgb(140, 181, 235)">
+
+            <h2>A Courseware Progran On Teaching Nouns For Primary Schools</h2>
+        </ion-slide>
+
+
+        <ion-slide>
+
+            <!--to add budge to the form-->
+
+            <ion-item id="pic">
+                <ion-card>
+
+                    <ion-card-content>
+                        <h2 class="intro">Intoduction To Nouns</h2>
+                    </ion-card-content>
+
+                </ion-card>
+                <img src="../assets/imgs/noun2.jpg">
+
+            </ion-item>
+            <button ion-button round>Exit</button>
+            <button ion-button round (click)="showToastWithCloseButton()">Help </button>
+            <button ion-button round (click)="tutorial()">Next </button>
+
+
+        </ion-slide>
+
+
+
+    </ion-slides>
+
 </ion-content>

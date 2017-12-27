@@ -1,0 +1,12 @@
+page-d-noun {
+    .nounC {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1px solid red;
+        background-color: rgb(181, 243, 181);
+    }
+    .Mnoun {
+        border: blue($color: #000000);
+        background-color: rgba(143, 207, 236, 0.788);
+        text-shadow: 90px;
+    }
+}

@@ -1,0 +1,152 @@
+<!--
+  Generated template for the DNounPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Noun</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <!--Adding the pictures -->
+
+    <div padding>
+        <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="Definition">
+                Definition
+            </ion-segment-button>
+            <ion-segment-button value="Examples">
+                Examples
+            </ion-segment-button>
+
+            <!-- Adding another one-->
+            <ion-segment-button value="Exercise">
+                Exercise
+            </ion-segment-button>
+
+        </ion-segment>
+
+    </div>
+
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'Examples'">
+            <ion-card>
+                <img src="../assets/imgs/ant1.jpg" />
+                <ion-card-content>
+                    <ion-card-title>
+                        Ant
+                    </ion-card-title>
+                    <p>An example of insect (Animal) </p>
+                </ion-card-content>
+            </ion-card>
+
+            <!--cars-->
+            <ion-card>
+                <img src="../assets/imgs/car.jpeg" />
+                <ion-card-content>
+                    <ion-card-title>
+                        Car
+                    </ion-card-title>
+                    <p>An example of a thing </p>
+                </ion-card-content>
+            </ion-card>
+
+            <!--hospital-->
+            <ion-card>
+                <img src="../assets/imgs/hospital.jpg" />
+                <ion-card-content>
+                    <ion-card-title>
+                        Hospital
+                    </ion-card-title>
+                    <p>An example of place </p>
+                </ion-card-content>
+            </ion-card>
+
+            <!--human-->
+            <ion-card>
+                <img src="../assets/imgs/hunman.jpeg" />
+                <ion-card-content>
+                    <ion-card-title>
+                        Human Being
+                    </ion-card-title>
+                    <p>An example of Human being </p>
+                </ion-card-content>
+            </ion-card>
+
+            <!--
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="../assets/imgs/pic3.jpg">
+                    <img src="../assets/imgs/ant1.jpg">
+                </ion-thumbnail>
+                <h2>Car</h2>
+
+                <h2>Ant</h2>
+            </ion-item>  -->
+            ...
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'Definition'">
+            <ion-card>
+
+
+                <ion-card-content class="Mnoun">
+                    <p>A noun is a word that identifies a person, animal, place, thing, or idea</p>
+                </ion-card-content>
+
+
+
+            </ion-card>
+
+            <ion-card>
+
+
+                <ion-card-content class="nounC">
+                    <p>A noun is a part of speech that denotes a person, animal, place, thing, or idea. The English word noun has its roots in the Latin word nomen, which means “name.” Every language has words that are nouns. As you read the following explanations,
+                        think about some words that might fit into each category. </p>
+
+                </ion-card-content>
+                <ion-card-content class="nounC">
+
+                    <p>• Person – A term for a person, whether proper name, gender, title, or class, is a noun.</p>
+                    <p> • Animal – A term for an animal, whether proper name, species, gender, or class is a noun. </p>
+                    <p> • Place – A term for a place, whether proper name, physical location, or general locale is a noun. </p>
+                    <p> • Thing – A term for a thing, whether it exists now, will exist, or existed in the past is a noun.</p>
+                    <p> • Idea – A term for an idea, be it a real, workable idea or a fantasy that might never come to fruition is a noun.</p>
+
+                </ion-card-content>
+
+
+            </ion-card>
+            <ion-item>
+
+
+            </ion-item>
+            ...
+        </ion-list>
+
+        <!--To represent Exercise !-->
+        <ion-list *ngSwitchCase="'Exercise'">
+
+
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="../assets/imgs/pic3.jpg">
+                </ion-thumbnail>
+                <h2>Car</h2>
+            </ion-item>
+            ...
+        </ion-list>
+
+
+
+    </div>
+
+</ion-content>
