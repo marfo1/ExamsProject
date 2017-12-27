@@ -38,5 +38,6 @@ export class TutorialPage {
       typesNoun(){
         this.navCtrl.push(TypeNounPage);
       }
+      
 
 }

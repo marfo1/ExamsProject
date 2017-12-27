@@ -45,7 +45,7 @@ export class TypeNounPage {
       
     }
     else 
-    if (item =='Improper Noun'){
+    if (item =='Material Noun'){
       this.navCtrl.push(ImproperNounPage);
     }
 
