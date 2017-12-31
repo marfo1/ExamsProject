@@ -1,3 +1,4 @@
+import { VideoPage } from './../video/video';
 //import { TypesPage } from './../types/types';
 
 import { DNounPage } from './../d-noun/d-noun';
@@ -39,5 +40,7 @@ export class TutorialPage {
         this.navCtrl.push(TypeNounPage);
       }
       
-
+     video(){
+       this.navCtrl.push(VideoPage);
+     }
 }

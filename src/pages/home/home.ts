@@ -1,3 +1,5 @@
+//import { Platform } from 'ionic-angular';
+
 //import { HomePage } from './home';
 
 import { Component } from '@angular/core';
@@ -11,10 +13,11 @@ import { ToastController } from 'ionic-angular/components/toast/toast-controller
   templateUrl: 'home.html'
 })
 export class HomePage {
+ 
 //firstPage:any ;
   constructor(public navCtrl: NavController,public toastCtrl:ToastController) {
-
-  }
+    
+ }
   tutorial(){
     //this.firstPage= "TutoriaPage"
     this.navCtrl.push("TutorialPage");
