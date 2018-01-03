@@ -18,6 +18,7 @@ import { HomePage } from '../pages/home/home';
 import { TypesPage } from '../pages/types/types';
 import { CountableNounPage } from '../pages/countable-noun/countable-noun';
 import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun';
+import { AboutPage } from '../pages/about/about';
 
 //import { TutorialPage } from './../pages/tutorial/tutorial';
 
@@ -34,7 +35,8 @@ import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun'
     CountableNounPage,
     UncountableNounPage,
     VideoPage,
-    ExercisePage
+    ExercisePage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun'
     CountableNounPage,
     UncountableNounPage,
     VideoPage,
-    ExercisePage
+    ExercisePage,
+    AboutPage
   ],
   providers: [
     StatusBar,

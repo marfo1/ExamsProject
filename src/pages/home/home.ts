@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular/components/toast/toast-controller';
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
+import { AboutPage } from '../about/about';
 
 
 
