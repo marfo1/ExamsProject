@@ -20,7 +20,7 @@
     <form (submit)="doSubmit($event)" [formGroup]="langForm">
         <ion-list radio-group formControlName="langs">
 
-            <h2>Which of the following is a common noun?
+            <h2>(1) Which of the following is a common noun?
             </h2>
 
             <ion-item>
@@ -39,21 +39,100 @@
     <form (submit)="doSubmit($event)" [formGroup]="langForm">
         <ion-list radio-group formControlName="langs">
 
-            <h2>Which of the following is a common noun?
+            <h2>(2) Which of the following is a common noun?
             </h2>
 
             <ion-item>
-                <ion-label>Accra</ion-label>
-                <ion-radio value="r1" checked="true" (ionSelect)="radio3()"></ion-radio>
+                <ion-label>man</ion-label>
+                <ion-radio value="r3" checked="true" (ionSelect)="radio3()"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Goat</ion-label>
-                <ion-radio value=" r2 " (ionSelect)="radio4()"></ion-radio>
+                <ion-radio value=" r4 " (ionSelect)="radio4()"></ion-radio>
             </ion-item>
 
 
         </ion-list>
     </form>
+    <!--question three -->
+    <form (submit)="doSubmit($event)" [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
+
+            <h2>(3) All the following are examples of nouns kojo, tree, girl, car.
+            </h2>
+
+            <ion-item>
+                <ion-label>True</ion-label>
+                <ion-radio value="r5" checked="true" (ionSelect)="radio5()"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fales</ion-label>
+                <ion-radio value=" r2 " (ionSelect)="radio6()"></ion-radio>
+            </ion-item>
+
+
+        </ion-list>
+    </form>
+    <!--question 4-->
+    <form (submit)="doSubmit($event)" [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
+
+            <h2>(4) Kumasi is the capital city of Ghana.
+            </h2>
+
+            <ion-item>
+                <ion-label>True</ion-label>
+                <ion-radio value="r7" checked="true" (ionSelect)="radio7()"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fales</ion-label>
+                <ion-radio value=" r8 " (ionSelect)="radio8()"></ion-radio>
+            </ion-item>
+
+
+        </ion-list>
+    </form>
+    <!--question 5 -->
+
+    <form (submit)="doSubmit($event)" [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
+
+            <h2>(5) A noun is a name of a person, place animal, thing emotions etc.
+            </h2>
+
+            <ion-item>
+                <ion-label>True</ion-label>
+                <ion-radio value="r9" checked="true" (ionSelect)="radio9()"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fales</ion-label>
+                <ion-radio value=" r10 " (ionSelect)="radio10()"></ion-radio>
+            </ion-item>
+
+
+        </ion-list>
+    </form>
+    <!--question 6 -->
+    <form (submit)="doSubmit($event)" [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
+
+            <h2>(6) Countable nouns are nouns that can be counted.
+            </h2>
+
+            <ion-item>
+                <ion-label>True</ion-label>
+                <ion-radio value="r11" checked="true" (ionSelect)="radio11()"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fales</ion-label>
+                <ion-radio value="r12" (ionSelect)="radio12()"></ion-radio>
+            </ion-item>
+
+
+        </ion-list>
+    </form>
+
+
     <ion-buttons>
         <button ion-button>Submit</button>
     </ion-buttons>
