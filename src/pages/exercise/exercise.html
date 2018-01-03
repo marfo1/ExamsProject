@@ -15,29 +15,49 @@
 
 <ion-content padding>
 
-    <ion-card>
 
-        <form (submit)="doSubmit($event)" [formGroup]="langForm">
-            <ion-list radio-group formControlName="langs">
 
-                <h2>Which of the following is a common noun?
-                </h2>
+    <form (submit)="doSubmit($event)" [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
 
-                <ion-item>
-                    <ion-label>Accra</ion-label>
-                    <ion-radio value="golang" checked="true" (ionSelect)="radioChecked()"></ion-radio>
-                </ion-item>
-                <ion-item>
-                    <ion-label>Goat</ion-label>
-                    <ion-radio value=" rust "></ion-radio>
-                </ion-item>
+            <h2>Which of the following is a common noun?
+            </h2>
 
-            </ion-list>
-        </form>
-        <ion-buttons>
-            <button ion-button>Submit</button>
-        </ion-buttons>
+            <ion-item>
+                <ion-label>Accra</ion-label>
+                <ion-radio value="r1" checked="true" (ionSelect)="radio1()"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Goat</ion-label>
+                <ion-radio value=" r2 " (ionSelect)="radio2()"></ion-radio>
+            </ion-item>
 
-    </ion-card>
+
+        </ion-list>
+    </form>
+
+    <form (submit)="doSubmit($event)" [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
+
+            <h2>Which of the following is a common noun?
+            </h2>
+
+            <ion-item>
+                <ion-label>Accra</ion-label>
+                <ion-radio value="r1" checked="true" (ionSelect)="radio3()"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Goat</ion-label>
+                <ion-radio value=" r2 " (ionSelect)="radio4()"></ion-radio>
+            </ion-item>
+
+
+        </ion-list>
+    </form>
+    <ion-buttons>
+        <button ion-button>Submit</button>
+    </ion-buttons>
+
+
 
 </ion-content>

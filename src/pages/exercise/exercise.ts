@@ -35,7 +35,7 @@ export class ExercisePage {
     event.preventDefault();
   }
 
-  radioChecked(){
+  radio1(){
     
       let alert = this.alertCtrl.create({
         title: 'Try Again',
@@ -44,6 +44,33 @@ export class ExercisePage {
       });
       alert.present();
   }
+  radio2(){
+    let alert = this.alertCtrl.create({
+      title: 'Greet',
+      subTitle: 'Your answer is correct!',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+  radio3() {
+    let alert = this.alertCtrl.create({
+      title: 'Greet',
+      subTitle: 'Your answer is correct!',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+  radio4(){
+    
+      let alert = this.alertCtrl.create({
+        title: 'Try Again',
+        subTitle: 'You can do better than this',
+        buttons: ['OK']
+      });
+      alert.present();
+  }
+  
+  
 
 
 }
