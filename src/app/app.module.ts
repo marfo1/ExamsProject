@@ -34,7 +34,6 @@ import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun'
     CountableNounPage,
     UncountableNounPage,
     VideoPage,
-    //Have added a new page called exercise
     ExercisePage
   ],
   imports: [

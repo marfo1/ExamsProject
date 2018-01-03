@@ -46,6 +46,7 @@ export class TutorialPage {
      }
 
   exercisePage(){
-       this.navCtrl.push(ExercisePage)
-     }
+    this.navCtrl.push(ExercisePage);
+  }
 }
+ 
