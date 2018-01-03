@@ -1,3 +1,4 @@
+import { ExercisePage } from './../exercise/exercise';
 import { VideoPage } from './../video/video';
 //import { TypesPage } from './../types/types';
 
@@ -42,5 +43,9 @@ export class TutorialPage {
       
      video(){
        this.navCtrl.push(VideoPage);
+     }
+
+  exercisePage(){
+       this.navCtrl.push(ExercisePage)
      }
 }

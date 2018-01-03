@@ -1,3 +1,4 @@
+import { ExercisePage } from './../pages/exercise/exercise';
 import { VideoPage } from './../pages/video/video';
 import { ImproperNounPage } from './../pages/improper-noun/improper-noun';
 import { CommonNounPage } from './../pages/common-noun/common-noun';
@@ -19,6 +20,7 @@ import { CountableNounPage } from '../pages/countable-noun/countable-noun';
 import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun';
 
 //import { TutorialPage } from './../pages/tutorial/tutorial';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +33,9 @@ import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun'
     ImproperNounPage,
     CountableNounPage,
     UncountableNounPage,
-    VideoPage
+    VideoPage,
+    //Have added a new page called exercise
+    ExercisePage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { UncountableNounPage } from '../pages/uncountable-noun/uncountable-noun'
     ImproperNounPage,
     CountableNounPage,
     UncountableNounPage,
-    VideoPage
+    VideoPage,
+    ExercisePage
   ],
   providers: [
     StatusBar,
