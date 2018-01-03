@@ -16,7 +16,7 @@ import { AlertController } from 'ionic-angular/components/alert/alert-controller
 export class HomePage {
  
 //firstPage:any ;
-  constructor(public navCtrl: NavController,public toastCtrl:ToastController,public alertCtrl:AlertController) {
+  constructor(public navCtrl: NavController,public toastCtrl:ToastController,public alerCtrl:AlertController) {
     
  }
 
@@ -44,4 +44,33 @@ export class HomePage {
     toast.present();
   }
 
-}
+    //to alert the user to exit
+
+    doConfirm() {
+      let confirm = this.alerCtrl.create({
+        title: 'Exit',
+        message: 'Do you want to Exit',
+        buttons: [
+          {
+            text: 'No',
+            handler: () => {
+              console.log();
+            }
+          },
+          {
+            text: 'Yes',
+            handler: () => {
+             this.navCtrl.push(AboutPage);
+            //  console.log();
+            }
+          }
+        ]
+      });
+      confirm.present()
+    }
+  
+  }
+
+
+
+
