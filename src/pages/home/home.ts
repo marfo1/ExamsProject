@@ -1,3 +1,4 @@
+import { AboutPage } from './../about/about';
 //import { Platform } from 'ionic-angular';
 
 //import { HomePage } from './home';
@@ -70,6 +71,9 @@ export class HomePage {
       confirm.present()
     }
   
+      about(){
+        this.navCtrl.push(AboutPage);
+      }
   }
 
 
