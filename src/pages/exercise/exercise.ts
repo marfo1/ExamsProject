@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the ExercisePage page.
@@ -23,7 +24,7 @@ export class ExercisePage {
   langs;
   langForm;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
     this.langForm = new FormGroup({
       "langs": new FormControl({ value: 'rust', disabled: false })
     });
@@ -36,12 +37,14 @@ export class ExercisePage {
 
   radioChecked(){
     
+      let alert = this.alertCtrl.create({
+        title: 'Try Again',
+        subTitle: 'You can do better than this',
+        buttons: ['OK']
+      });
+      alert.present();
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ExercisePage');
-  }
-
 
 
 }
+
