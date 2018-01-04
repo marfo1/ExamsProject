@@ -5,7 +5,6 @@ import { VideoPage } from './../video/video';
 import { DNounPage } from './../d-noun/d-noun';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { hasLifecycleHook } from '@angular/compiler/src/lifecycle_reflector';
 import { PopoverController } from 'ionic-angular/components/popover/popover-controller';
 import { TypeNounPage } from '../type-noun/type-noun';
 

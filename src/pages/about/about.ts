@@ -17,7 +17,7 @@ export class AboutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+s
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');
   }
